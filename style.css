@@ -1,5 +1,105 @@
 body
 {
-    margin: 0 ;
-    padding: 0 ;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    background-color: wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
+h1{
+    font-size: 35px;
+}
+#lblEnter
+{
+    font-weight: 50px;
+}
+
+.flex-container
+{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+}
+
+.flex-container button
+{
+    margin-top: 10px;
+    width: 100px;
+}
+#lblEnter
+{
+margin: 10px 0 0 10px;
+font-weight: bold;
+font-size: 25px;
+}
+.mainDiv
+{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: center;
+  
+}
+
+
+.tasklbl
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.tasklbl > label
+{ 
+    text-align: right;
+    margin-top: 10px;
+}
+
+.tasktxt
+{
+    display: flex;
+    flex-direction: column;
+}
+.tasktxt > input
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    /* font-weight: bold; */
+}
+
+#detDiv
+{
+padding: 10px;
+background-color: cadetblue;
+width: 320px;
+margin-top: 10px;
+margin-left: 0px;
+overflow-y: scroll;
+}
+
+
+#detDiv button
+{
+width: 22px;
+height: 22px;
+font-weight: bold;
+
+}
+
+/* #detDiv input
+{
+    width: 120px;
+} */
+
+#lblDetail
+{
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
