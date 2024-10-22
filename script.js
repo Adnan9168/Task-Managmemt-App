@@ -10,10 +10,10 @@ let taskName = document.getElementById("txtTaskName").value;
 let txtDate = document.getElementById("txtDate").value;
 
 // alert if text boxes are empty 
-if (!taskName || !txtDate) {
-    alert("Please fill in both fields.");
-    return;
-}
+// if (!taskName || !txtDate) {
+//     alert("Please fill in both fields.");
+//     return;
+// }
 
 //  dynamically create elements (div,textboxes,buttons)
     let taskDiv = document.createElement("div");
@@ -23,6 +23,7 @@ if (!taskName || !txtDate) {
     let btnDelete = document.createElement ("button");
 
  // setting value attribute of textboxes
+    taskDateTimeInput.type = "datetime-local";
     taskNameInput .setAttribute("value",taskName);
     taskDateTimeInput.setAttribute("value",txtDate);
     
@@ -34,7 +35,7 @@ if (!taskName || !txtDate) {
     btnEdit.style.color = "green";
     btnDelete.style.color = "red";
     taskNameInput.style.width = "90px";
-    taskDateTimeInput.style.width = "130px"
+    taskDateTimeInput.style.width = "150px"
     
     // appening div to newbox Div
     let newBox = document.getElementById ("detDiv");
@@ -53,7 +54,7 @@ if (!taskName || !txtDate) {
             taskName.readOnly = false;
             taskDateTimeInput.readOnly = false;
             taskNameInput.focus();
-            taskDateTimeInput.type = "datetime-local";
+            //taskDateTimeInput.type = "datetime-local";
             btnEdit.innerText= "S";
         } 
         else
